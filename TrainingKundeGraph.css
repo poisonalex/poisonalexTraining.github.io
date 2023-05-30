@@ -66,9 +66,13 @@
 }
 
 .graph-dartellung-button {
-    display: flex;
-    flex-direction: row;
-    margin: 0.3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'topleft topmiddle topright'
+    'bottomleft bottommiddle bottomright'
+    ;
     padding: 0.3em;
     height: 10%;
     width: 100%;
@@ -77,6 +81,13 @@
     border: none;
     border-top: #4d4d4d solid;
 }
+
+#graph-legende0 {grid-area: topleft;}
+#graph-legende1 {grid-area: topmiddle;}
+#graph-legende2 {grid-area: topright;}
+#graph-legende3 {grid-area: bottomleft;}
+#graph-legende4 {grid-area: bottommiddle;}
+#graph-legende5 {grid-area: bottomright;}
 
 .graph-dartellung-button button {
     margin: 0.2em;
