@@ -309,10 +309,7 @@ function inahltUpdate12() {
 
 //--------------------------------------------------------------------------------//
 
-document.getElementById('untertitel').onmouseenter = function () {
+document.getElementById('untertitel').ontouchstart = function () {
     document.getElementById('protokoll-beispiel').style.display = 'flex';
 }
 
-document.getElementById('untertitel').onmouseleave = function () {
-    document.getElementById('protokoll-beispiel').style.display = 'none';
-}
