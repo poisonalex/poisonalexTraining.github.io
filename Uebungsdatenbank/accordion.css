@@ -1,0 +1,98 @@
+.acc {
+    width: 100em;
+    max-width: 90vw;
+    margin: 1em auto;
+}
+
+.acc .choice {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-areas: "name action"
+        "panel panel";
+}
+
+.acc label:nth-child(odd) {
+    grid-area: name;
+}
+
+.acc label:nth-child(even) {
+    grid-area: action;
+}
+
+.acc .panel {
+    grid-area: panel;
+}
+
+.acc input[name="ac"] {
+    display: none
+}
+
+.acc .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    height: 0;
+    width: 100em;
+    max-width: 90vw;
+    overflow: hidden;
+    background-color: #757575;
+    border-bottom: #0095C5 solid;
+    border-top: #0095C5 solid;
+    line-height: 1.5;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.acc .panel p {
+    margin-top: 0
+}
+
+.acc input.open:checked~.panel {
+    height: auto;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+.acc label {
+    cursor: pointer;
+    background-color: #00688B;
+    padding: 1em;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    z-index: 100;
+    color: white;
+    z-index: 1;
+}
+
+.acc input.open:checked~label {
+    background-color: #0095C5;
+}
+
+.acc label:nth-child(odd)::after {
+    content: "+";
+    color: white;
+    float: right;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.acc input.open:checked~label:nth-child(odd)::after {
+    content: "";
+}
+
+.acc input.open:checked~label.close::after {
+    content: "– ";
+    font-size: 1.2em;
+}
+
+@media(max-width:800px) {
+    .acc  {
+        max-width: 90vw;
+    }
+}

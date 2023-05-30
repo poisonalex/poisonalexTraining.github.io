@@ -1,0 +1,129 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    width: 100%;
+    background-color: #757575;
+    border: #00688B solid;
+    border-radius: 1em;
+    color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h3 {
+    text-align: center;
+    margin-top: 0.2em;
+    width: 100%;
+    border-bottom: #4d4d4d solid;
+}
+
+.container-uebung {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.uebung-bild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+    height: 100%;
+    width: 40%;
+    border-right: #4d4d4d solid;
+}
+
+.uebung-bild img {
+    height: 15em;
+    width: 15em;
+    border-radius: 1em;
+}
+
+.uebung-bild h4 {
+    border-bottom: #4d4d4d solid;
+}
+
+.uebung-bild p {
+    font-size: 0.8em;
+    line-height: 0.1em;
+}
+
+@media(max-width:800px) {
+    .uebung-bild {
+        width: 90%;
+        border-right: hidden;
+        border-bottom: #4d4d4d solid;
+    }
+}
+
+.uebung-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+    height: 100%;
+    width: 60%;
+}
+
+.uebung-text h4 {
+    border-bottom: #4d4d4d solid;
+}
+
+.uebung-text p {
+    font-size: 0.8em;
+
+}
+
+.uebungsbereiche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.uebungsbereiche p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.uebungsbereiche i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.1em;
+    height: 2em;
+    width: 2em;
+    background-color: #00688B;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+hr {
+    width: 100%;
+    border: #4d4d4d solid 0.1em;
+}
+
+@media(max-width:800px) {
+    .container-uebung {
+        flex-direction: column;
+    }
+
+    .uebungsbereiche {
+        flex-direction: column;
+    }
+}

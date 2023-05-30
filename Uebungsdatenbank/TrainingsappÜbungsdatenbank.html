@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainingsapp 0.1</title>
+
+    <!-- Icons & fonts & graph-->
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="/google.fonts/css2.css">
+    <script src="/Charts/chart.min.js"></script>
+    <!--end-->
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="uebungsContainer.css">
+    <link rel="stylesheet" href="accordion.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <h1 class="header-ueberschrift">Übungslexikon</h1>
+        </div>
+        <div class="dropdown">
+            <button class="menue"><i class="fa fa-bars"></i> Menü</button>
+            <div class="dropdown-content">
+                <a href="/Kunde/1TrainingsappDashboardKunde.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+                <a href="/Kunde/2TrainingsappTrainingKunde.html"><i class="fa-solid fa-dumbbell"></i> Training</a>
+                <a href="/Ernährung/ernähtung.html"><i class="fa-solid fa-apple-whole"></i> Ernährung</a>
+                <a href="/Fortschrittsseite/fortschritsseite.html"><i class="fa-solid fa-star"></i> Fortschritte</a>
+                <a href="/Uebungsdatenbank/TrainingsappÜbungsdatenbank.html"><i class="fa-solid fa-book"></i>
+                    Übungslexikon</a>
+                <a href="/EinstellungKunde/00TrainingsappEinstellungKunde.html"><i class="fa-solid fa-gear"></i>
+                    Einstellungen</a>
+                <a style="border-bottom: hidden;" href="/TrainingsappLogin.html">Abmelden</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="body-header">
+            <form action="">
+                <input type="search" name="" id="search" placeholder="Übung suchen">
+                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="acc">
+            <div class="choice">
+                <input type="radio" class="open" name="ac" id="chest">
+                <input type="radio" class="close" name="ac" id="chest-closed">
+                <label for="chest">Brustübungen</label>
+                <label class="close" for="chest-closed"></label>
+                <ul class="panel">
+                    <div class="container">
+                        <h3>Bankdrücken</h3>
+                        <div class="container-uebung">
+                            <div class="uebung-bild">
+                                <img src="/Uebungsdatenbank/Bilder/Screenshot (220).png" alt="">
+                                <h4>Beanspruchte Muskeln:</h4>
+                                <p>1. großer Brustmuskel</p>
+                                <p>1. Trizeps</p>
+                                <p>1. vordere Schulter</p>
+                            </div>
+                            <div class="uebung-text">
+                                <h4>Übungsbeschreibung:</h4>
+                                <p>1. Schulterblätter nach hinten und unten ziehen.</p>
+                                <p>2. Beim Auflegen auf die Bank, ein leichtes Hohlkreuz bilden, so dass der Körper nur
+                                    noch auf dem Schultergürtel und dem Po aufliegt. Die beine haben einen sicheren
+                                    Stand.</p>
+                                <p>3. Die Hantel etwas weiter als Schulterbreit (Unterarm 90° zur Stange) greifen und
+                                    auf die Unterkante der Brust führen.</p>
+                                <p>4. Die Arme sollten ca. einen Winkel von 45° zum Oberkörper beid der Ausführung
+                                    haben.</p>
+                                <p>5. Der Weg der Langhantel sollte in einem Halbogen von unten nach oben gedrückt
+                                    werden.</p>
+                                <h4>Übungsbereiche:</h4>
+                                <div class="uebungsbereiche">
+                                    <p><i class="fa-solid fa-dumbbell" style="color: #ffa500;"></i>Hypertophie</p>
+                                    <p><i class="fa-solid fa-weight-hanging" style="color: black;"></i>Maximalkraft</p>
+                                    <p><i class="fa-solid fa-bolt" style="color: #D3CF00;"></i> Funktional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h3>Schrägbankdrücken</h3>
+                        <div class="container-uebung">
+                            <div class="uebung-bild">
+                                <img src="" alt="">
+                                <h4>Beanspruchte Muskeln:</h4>
+                                <p>großer Brustmuskel</p>
+                                <p>Trizeps</p>
+                                <p>vordere Schulter</p>
+                            </div>
+                            <div class="uebung-text">
+                                <h4>Übungsbeschreibung:</h4>
+                                <p>1. Beim Hinsetzten Schulterblätter nach hinten und unten ziehen.</p>
+                                <p>2. Die Hantel etwas weiter als Schulterbreit (Unterarm 90° zur Stange) greifen und
+                                    auf die Brust führen.</p>
+                                <p>3. Die Arme sollten ca. einen Winkel von 45° zum Oberkörper beid der Ausführung
+                                    haben.</p>
+                                <h4>Übungsbereiche:</h4>
+                                <div class="uebungsbereiche">
+                                    <p><i class="fa-solid fa-dumbbell" style="color: #ffa500;"></i>Hypertophie</p>
+                                    <p><i class="fa-solid fa-weight-hanging" style="color: black;"></i>Maximalkraft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="choice">
+                <input type="radio" class="open" name="ac" id="back">
+                <input type="radio" class="close" name="ac" id="back-closed">
+                <label for="back">Rückenübungen</label>
+                <label class="close" for="back-closed"></label>
+                <ul class="panel">
+                    <div class="container">
+                        <h3>Klimmzug</h3>
+                        <div class="container-uebung">
+                            <div class="uebung-bild">
+                                <img src="/Uebungsdatenbank/Bilder/Screenshot (222).png" alt="">
+                                <h4>Beanspruchte Muskeln:</h4>
+                                <p>1. Latissimus</p>
+                                <p>1. Trapez/ hintere Schulter</p>
+                                <p>1. Bizeps</p>
+                                <p>2. Rombuiden</p>
+                                <p>2. Core</p>
+                            </div>
+                            <div class="uebung-text">
+                                <h4>Übungsbeschreibung:</h4>
+                                <p>1. etwa Schulterbreit greifen.</p>
+                                <p>2. aktives Hohlkreuz oder activen Bukel bilden, so dass die Coremuskulatur immer
+                                    angespannt ist.
+                                </p>
+                                <p>3. Die Beine ebenfalls fest machen und nicht einfach baumeln lassen.</p>
+                                <p>4. Nach oben zur Stande ziehen, bis das Kinn über der Stange ist.</p>
+                                <p>5. Langsam wider nachuntel lassen (die Bewegung Kontrolieren).</p>
+                                <hr>
+                                <p><u>Hinweis:</u> Wenn ein normaler Klimmzug noch zuschwer ist, dann übe erstmal nur
+                                    die
+                                    negative (das Herrunterlassen) oder nimm Reistenzbänder zur Hilfe.</p>
+                                <h4>Übungsbereiche:</h4>
+                                <div class="uebungsbereiche">
+                                    <p><i class="fa-solid fa-dumbbell" style="color: #ffa500;"></i>Hypertophie</p>
+                                    <p><i class="fa-solid fa-weight-hanging" style="color: black;"></i>Maximalkraft</p>
+                                    <p><i class="fa-solid fa-bolt" style="color: #D3CF00;"></i> Funktional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="choice">
+                <input type="radio" class="open" name="ac" id="shoulder">
+                <input type="radio" class="close" name="ac" id="shoulder-closed">
+                <label for="shoulder">Schulterübungen</label>
+                <label class="close" for="shoulder-closed"></label>
+                <div class="panel">
+                    <div class="container">
+                        <h3>Schulterdrücken</h3>
+                        <div class="container-uebung">
+                            <div class="uebung-bild">
+                                <img src="" alt="">
+                                <h4>Beanspruchte Muskeln:</h4>
+                                <p>1. Deltamuskel</p>
+                                <p>1. Trizeps</p>
+                                <p>2. Trapez</p>
+                            </div>
+                            <div class="uebung-text">
+                                <h4>Übungsbeschreibung:</h4>
+                                <p>1. Sicheren schulterbreiten Stand.</p>
+                                <p>2. Langhantel schulterbreit greifen und dabei darauf achte, dass der Unterarm im 90°
+                                    Winkel unter der Stange ist.</p>
+                                <p>3. Beim herrausheben der Langhantel, diese etwa auf Schlüsselbein Höhe ablegen. Die
+                                    Ellenbögen sollten parallel vor dem Körper sein.</p>
+                                <p>4. Die Langhantel nun nach oben drücken. Dabei die Ellenbögen vor dem Körper führen
+                                    bis die Arme gestreckt sind.</p>
+                                <p>5. Die Hantel verläuft auf einem geraden Weg nach oben und unten. In den volltändigen
+                                    Streckung ein leichtes Hohlkreuz bilden und den Kopf unter die Stange schieben.</p>
+                                <p>6. Wärend der gesammten Übung den Po und den Core (Bauch) anspannen.</p>
+                                <hr>
+                                <p><u>Hinweis:</u> Schritt 6. rhuig ertmal ohne Gewicht oder nur mit der Langhantel
+                                    üben. Dieser Schritt macht die Übung deutlich leichter.</p>
+                                <h4>Übungsbereiche:</h4>
+                                <div class="uebungsbereiche">
+                                    <p><i class="fa-solid fa-dumbbell" style="color: #ffa500;"></i> Hypertophie</p>
+                                    <p><i class="fa-solid fa-weight-hanging" style="color: black;"></i> Maximalkraft</p>
+                                    <p><i class="fa-solid fa-bolt" style="color: #D3CF00;"></i> Funktional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="choice">
+                <input type="radio" class="open" name="ac" id="legs">
+                <input type="radio" class="close" name="ac" id="legs-closed">
+                <label for="legs">Beinübungen</label>
+                <label class="close" for="legs-closed"></label>
+                <div class="panel">
+                    <div class="container">
+                        <h3>Kniebeuge</h3>
+                        <div class="container-uebung">
+                            <div class="uebung-bild">
+                                <img src="" alt="">
+                                <h4>Beanspruchte Muskeln:</h4>
+                                <p>1. quadrizeps fermois</p>
+                                <p>2. gluteus maximus</p>
+                                <p>2. bizeps fermois</p>
+                                <p>2. Adduktoren/ Abduktoren</p>
+                            </div>
+                            <div class="uebung-text">
+                                <h4>Übungsbeschreibung:</h4>
+                                <p>1. Sicheren und einen etwas breiteren Stand als Schulterbreit.</p>
+                                <p>2. Langahntel auf dem Nacken ablegen (<u>Wichtig</u>: nicht auf den Halswirbeln).</p>
+                                <p>3. Beim Herruntergehen die Knie nach außen und bis bzw. über die Füße schieben.</p>
+                                <p>4. Je nach Größenverhältnissen und der Beweglichkeit im Sprunggelenk kann man tiefer
+                                    in die Beuge gehen .</p>
+                                <p>5. Wenn dein Po absackt ist deine max. Tiefe erreicht (so genannte Butwink) |
+                                    <u>Hinweis</u>: Übe die Schritte ertmal ohne Langhantel, um deine max. Tiefe herraus
+                                    zufinden.
+                                </p>
+                                <p>6. Während der gesammten Übung den Core (Bauch) nach ausßen drückn.</p>
+                                <p><u style="color: red;">Atemtechnik zu 6.</u>: Beim Start/ herruntergehen einaml tief
+                                    einatmen und dann die Luft im Bauch halten
+                                    und den Bachnabel nach außen drücken (Valsalva-Manöver). Am Ende der Übung wieder
+                                    ausatmen.</p>
+                                <hr>
+                                <p><u>Hinweis</u>: Wenn deine Mobiliät im Sprunggelenk nicht zulässt, dass du tief genug
+                                    runter kommst, lege eine leicht Erröhung unter deine Ferse. Meist hilft das schon
+                                    und macht es deutlich leichter.</p>
+                                <h4>Übungsbereiche:</h4>
+                                <div class="uebungsbereiche">
+                                    <p><i class="fa-solid fa-dumbbell" style="color: #ffa500;"></i> Hypertophie</p>
+                                    <p><i class="fa-solid fa-weight-hanging" style="color: black;"></i> Maximalkraft</p>
+                                    <p><i class="fa-solid fa-bolt" style="color: #D3CF00;"></i> Funktional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="choice">
+                <input type="radio" class="open" name="ac" id="core">
+                <input type="radio" class="close" name="ac" id="core-closed">
+                <label for="core">Bauchübungen</label>
+                <label class="close" for="core-closed"></label>
+                <div class="panel">
+                    <div class="container">
+                        <h3>Sit up</h3>
+                        <div class="container-uebung">
+                            <div class="uebung-bild">
+                                <img src="" alt="">
+                                <h4>Beanspruchte Muskeln:</h4>
+                                <p>1. rectus abdominis</p>
+                            </div>
+                            <div class="uebung-text">
+                                <h4>Übungsbeschreibung:</h4>
+                                <p>1. Hinsetzten, die Füße auf dem Boden abstellen und die Knie dabei anwinkeln.</p>
+                                <p>2. Nun den Oberkörper ablegen.</p>
+                                <p>3. Jetzt den Kopf wider in Richtung der Knie/ Beine bringen.</p>
+                                <p>4. <u>Wichtig</u>: den Oberkörper dabei im Bauch richtig einrunden, alos den Rücken
+                                    krümmen.</p>
+                                <h4>Übungsbereiche:</h4>
+                                <div class="uebungsbereiche">
+                                    <p><i class="fa-solid fa-dumbbell" style="color: #ffa500;"></i> Hypertophie</p>
+                                    <p><i class="fa-solid fa-weight-hanging" style="color: black;"></i> Maximalkraft</p>
+                                    <p><i class="fa-solid fa-bolt" style="color: #D3CF00;"></i> Funktional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="logoimpressum">
+                <a href="/Grundwebside/TrainingsappGrundWebside.html"><img src="logo-transparent-svg.svg"
+                        class="logo"></a>
+            </div>
+            <div class="impressum">
+                <div class="impressumtext">
+                    <a href=""> Terms </a>
+                    <a href="/EinstellungKunde/00TrainingsappEinstellungKunde.html"> Einstellungen </a>
+                    <a href="/Grundwebside/TrainingsappGrundWebsiteUeberUns.html"> Über uns </a>
+                    <a href="/Grundwebside/TrainingsappGrundWebside.html"> Website </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
