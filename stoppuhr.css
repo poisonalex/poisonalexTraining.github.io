@@ -1,0 +1,109 @@
+.stoppuhr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    width: 90%;
+    background-color: #757575;
+    border: #757575 solid;
+    border-radius: 1em;
+}
+
+.stoppuhr-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+    border-bottom: #4d4d4d solid 0.2em;
+    font-size: 1em;
+    color: white;
+}
+
+#zeitanzeige {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.2em;
+    background-color: #CCCCCC;
+    border-radius: 1em;
+    font-size: 3em;
+    font-family: monospace;
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    width: 85%;
+    border-top: #4d4d4d solid;
+}
+
+.button-container button i {
+    color: #0095C5;
+}
+
+.button-container button {
+    padding: 0.2em;
+    height: 3em;
+    width: 3em;
+    background-color: #00688B;
+    border: #00688B solid;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: white;
+}
+
+.button-container button:hover {
+    background-color: #0095C5;
+}
+
+.button-container button i:hover {
+    color: #00688B;
+}
+
+.button-speichern {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    gap: 1em;
+    width: 85%;
+    border-bottom: #4d4d4d solid;
+}
+
+.button-unterschrift {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1.5em;
+    margin-bottom: -1em;
+    gap: 3em;
+}
+
+.button-speichern button {
+    padding: 0.2em;
+    width: 90%;
+    background-color: #00688B;
+    border: #00688B solid;
+    border-radius: 1em;
+    font-size: 1em;
+    color: white;
+}
+
+.button-speichern button:hover {
+    background-color: #0095C5;
+}
+
+#gespeicherte-zeit {
+    margin: 0.5em;
+    background-color: #CCCCCC;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-family: monospace;
+}
