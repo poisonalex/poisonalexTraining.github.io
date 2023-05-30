@@ -309,7 +309,16 @@ function inahltUpdate12() {
 
 //--------------------------------------------------------------------------------//
 
-document.getElementById('untertitel').ontouchstart = function () {
-    document.getElementById('protokoll-beispiel').style.display = 'flex';
+let counter = 0;
+
+document.getElementById('untertitel').onclick = function () {
+    if (counter === 0) {
+        document.getElementById('protokoll-beispiel').style.display = 'flex';
+        counter = 1;
+    } else if (counter === 1) {
+        document.getElementById('protokoll-beispiel').style.display = 'none';
+        counter = 0;
+    }
+
 }
 
