@@ -306,3 +306,13 @@ function inahltUpdate11() {
 function inahltUpdate12() {
     progressBar3.style.width = `${((finalFortschrittsbalkenValue + 12) / maxFortschrittsbalkenValue) * 100}%`;
 }
+
+//--------------------------------------------------------------------------------//
+
+document.getElementById('untertitel').onmouseenter = function () {
+    document.getElementById('protokoll-beispiel').style.display = 'flex';
+}
+
+document.getElementById('untertitel').onmouseleave = function () {
+    document.getElementById('protokoll-beispiel').style.display = 'none';
+}
