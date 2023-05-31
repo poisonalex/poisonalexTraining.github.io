@@ -9,9 +9,9 @@
 
 
     <!-- Icons & fonts & graph-->
-    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
-    <link rel="stylesheet" href="./google.fonts/css2.css">
-    <script src="./Charts/chart.min.js"></script>
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="/google.fonts/css2.css">
+    <script src="/Charts/chart.min.js"></script>
     <!--end-->
 
     <div class="header">
@@ -21,15 +21,12 @@
     <div class="dropdown">
         <button class="menue"><i class="fa fa-bars"></i> Menü</button>
         <div class="dropdown-content">
-            <a href="./"><i class="fa-solid fa-house"></i> Dashboard</a>
-            <a href="./2TrainingsappTrainingKunde.html"><i class="fa-solid fa-dumbbell"></i> Training</a>
-            <a href="/Ernährung/ernähtung.html"><i class="fa-solid fa-apple-whole"></i> Ernährung</a>
             <a href="/Fortschrittsseite/fortschritsseite.html"><i class="fa-solid fa-star"></i> Fortschritte</a>
-            <a href="./Uebungsdatenbank/TrainingsappÜbungsdatenbank.html"><i class="fa-solid fa-book"></i> Übungslexikon</a>
+            <a href="./Uebungsdatenbank/TrainingsappÜbungsdatenbank.html"><i class="fa-solid fa-book"></i>
+                Übungslexikon</a>
             <a href="/EinstellungKunde/00TrainingsappEinstellungKunde.html"><i class="fa-solid fa-gear"></i>
                 Einstellungen</a>
             <a style="border-bottom: hidden;" href="/TrainingsappLogin.html">Abmelden</a>
-            <a href="./0TrainingsappCheckinKunde.html">CheckIn</a>
         </div>
     </div>
 
@@ -404,6 +401,7 @@
             position: relative;
             margin-top: 1em;
             margin-left: 0;
+            margin-bottom: 5em;
             display: flex;
             flex-direction: column;
             height: 15em;
@@ -417,62 +415,38 @@
 
         /* footer start */
 
-        .footer {
-            position: absolute;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: start;
-            margin-top: 2em;
-            left: 0;
-            height: 5em;
-            width: 100%;
-            border-color: #4d4d4d;
-            background-color: #00688B;
-            align-items: center;
-
-        }
-
-        .impressum {
+        footer {
+            position: fixed;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #00688B;
+        }
+
+        .footer-body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5em;
+            width: 100%;
+        }
+
+        .footer-body a {
+            text-align: center;
             height: 100%;
             width: 100%;
-            font-size: small;
-            border: none;
-        }
-
-        .impressumtext {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            font-size: 0.9em;
-            border: none;
-        }
-
-        .impressum a {
-            padding: 1em;
+            text-decoration: none;
             color: white;
-            border: none;
         }
 
-        .logoimpressum {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 50%;
-            border: none;
-            background-color: #CCCCCC;
-        }
-
-        .logo {
-            position: relative;
-            width: 10em;
+        #dashboard {
+            background-color: #0095C5;
+            border-radius: 1em;
         }
     </style>
 
@@ -562,11 +536,13 @@
         <div class="wochenupdatebody">
             <table>
                 <tr>
-                    <td style="border-bottom: #4d4d4d solid;">Hier kannst du Themen ansprechen oder einfach Dinge notieren.</td>
+                    <td style="border-bottom: #4d4d4d solid;">Hier kannst du Themen ansprechen oder einfach Dinge
+                        notieren.</td>
                 </tr>
                 <tr>
                     <td>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Hier hast du Platz zum Schreiben."></textarea>
+                        <textarea name="" id="" cols="30" rows="10"
+                            placeholder="Hier hast du Platz zum Schreiben."></textarea>
                     </td>
                 </tr>
             </table>
@@ -578,18 +554,14 @@
     <div class="platzhalter"></div>
 
     <!--footer-->
+
     <footer>
-        <div class="footer">
-            <div class="logoimpressum">
-                <a href="/Grundwebside/TrainingsappGrundWebside.html"><img src="logo-transparent-svg.svg" class="logo"></a>
-            </div>
-            <div class="impressum">
-                <div class="impressumtext">
-                    <a href="/EinstellungKunde/00TrainingsappEinstellungKunde.html"> Einstellungen </a>
-                    <a href="/Grundwebside/TrainingsappGrundWebsiteUeberUns.html"> Über uns </a>
-                    <a href="/Grundwebside/TrainingsappGrundWebside.html"> Website </a>
-                </div>
-            </div>
+        <div class="footer-header"></div>
+        <div class="footer-body">
+            <a href="./" id="dashboard"><i class="fa-solid fa-house"></i><br>Dashboard</a>
+            <a href="./2TrainingsappTrainingKunde.html" id="training"><i
+                    class="fa-solid fa-dumbbell"></i><br>Training</a>
+            <a href="./Ernährung/ernähtung.html" id="ernaerung"><i class="fa-solid fa-apple-whole"></i><br>Ernährung</a>
         </div>
     </footer>
 
